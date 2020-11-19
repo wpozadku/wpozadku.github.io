@@ -4,30 +4,24 @@
   <title>Wpozadku! Polecam!</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body, html {
-  height: 100%;
-  margin: 0;
+html,body{
+    margin:0;
+    height:100%;
+    overflow:hidden;
 }
-
-.bg {
-  /* The image used */
-  background-image: url("wpozadku.jpg");
-
-  /* Full height */
-  height: 100%; 
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+img{
+    min-height:100%;
+    min-width:100%;
+    height:auto;
+    width:auto;
+    position:absolute;
+    top:-100%; bottom:-100%;
+    left:-100%; right:-100%;
+    margin:auto;
 }
 </style>
 </head>
 <body>
-
-<div class="bg"></div>
-
-<p>Wpozadku! Plecam!</p>
-
+  <img src="wpozadku.jpg" alt="Polecam!">
 </body>
 </html>
